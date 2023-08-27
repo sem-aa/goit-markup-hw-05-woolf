@@ -751,7 +751,7 @@ input {
   font-size: 12px;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
-  line-height: 1.17
+  line-height: 1.17;
 }
 
 .contact-input-wrapper {
@@ -780,12 +780,16 @@ input {
 }
 
 .contact-input:focus + .contact-icon {
-  fill: var(--acive-color);
+  fill: var(--brand-color);
 }
 
 .contact-input:focus {
-  border-color: var(--acive-color);
+  border-color: var(--brand-color);
   outline-color: transparent;
+}
+
+.contact-container-comment {
+  margin-bottom: 16px;
 }
 
 .contact-comment {
@@ -796,41 +800,47 @@ input {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
+  line-height: 1.17;
+  background-color: transparent;
   transition: border-color var(--transition-dur-and-func);
-  margin-bottom: 16px;
+  outline: transparent;
 }
 
 .contact-comment:focus {
-  border-color: var(--acive-color);
+  border-color: var(--brand-color);
   outline-color: transparent;
 }
 
 .contact-label-chexbox {
-  display: flex;
+  display: block;
   align-items: center;
   font-size: 12px;
   color: var(--secondary-text-color);
   margin-bottom: 24px;
+  line-height: 1.17;
 }
 
-.contact-checkbox-input {
-  position: absolute;
-  appearance: none;
-}
-
-.contact-checkbox-icon {
+.privacy-container-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   fill: transparent;
   cursor: pointer;
-  border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  padding: 2px;
   margin-right: 8px;
 }
 
-.contact-checkbox-input:checked + .contact-checkbox-icon {
-  fill: rgba(244, 244, 253, 1);
+.contact-checkbox-input:checked + .privacy-container-icon {
+  fill: red;
   background-color: var(--acive-color);
+  border: none;
 }
+
 
 .link-privacy-policy {
   color: var(--brand-color);

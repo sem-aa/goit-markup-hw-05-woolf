@@ -657,26 +657,38 @@
               </svg>
             </div>
           </div>
-          <label for="commet" class="contact-label"> Comment</label>
-          <textarea
-            id="commet"
-            class="contact-comment"
-            name="comment"
-            placeholder="Text input"
-          ></textarea>
-          <label class="contact-label-chexbox">
+
+          <div class="contact-container-comment">
+            <label for="user-comment" class="contact-label"> Comment</label>
+            <textarea
+              id="user-comment"
+              class="contact-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div>
             <input
-              class="contact-checkbox-input"
+              id="user-privacy"
+              class="contact-checkbox-input is-hidden"
               type="checkbox"
-              name="user_accept_policy"
+              name="user-privacy"
+              value="true"
               required
             />
-            <svg class="contact-checkbox-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-checkbox"></use>
-            </svg>
-            I accept the terms and conditions of the&nbsp;
-            <a class="link-privacy-policy" href="">Privacy Policy</a>
-          </label>
+            <label  for="user-privacy" class="contact-label-chexbox">
+              <span class="privacy-container-icon">
+                <svg class="contact-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+
+              I accept the terms and conditions of the&nbsp;
+              <a class="link-privacy-policy" href="">Privacy Policy</a>
+            </label>
+          </div>
+
           <button class="hero-btn" type="submit">Send</button>
         </form>
       </div>

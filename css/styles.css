@@ -804,6 +804,8 @@ input {
   background-color: transparent;
   transition: border-color var(--transition-dur-and-func);
   outline: transparent;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .contact-comment:focus {
@@ -811,12 +813,15 @@ input {
   outline-color: transparent;
 }
 
+.privacy-container {
+  margin-bottom: 24px;
+}
+
 .contact-label-chexbox {
   display: block;
   align-items: center;
   font-size: 12px;
   color: var(--secondary-text-color);
-  margin-bottom: 24px;
   line-height: 1.17;
   letter-spacing: 0.04em;
 }

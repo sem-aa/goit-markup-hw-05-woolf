@@ -818,6 +818,7 @@ input {
   color: var(--secondary-text-color);
   margin-bottom: 24px;
   line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .privacy-container-icon {
@@ -836,11 +837,10 @@ input {
 }
 
 .contact-checkbox-input:checked + .privacy-container-icon {
-  fill: red;
+  fill: var(--light-bg-color);
   background-color: var(--acive-color);
   border: none;
 }
-
 
 .link-privacy-policy {
   color: var(--brand-color);
